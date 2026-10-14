@@ -1,0 +1,12 @@
+project_id = "substitua-pelo-ref-do-projeto"
+
+# A validacao do token acontece dentro de cada funcao via auth.getUser().
+# Isso suporta chaves de assinatura JWT modernas e legadas.
+[functions.insurance-api]
+verify_jwt = false
+
+[functions.insurance-users]
+verify_jwt = false
+
+[functions.insurance-dashboard]
+verify_jwt = false
